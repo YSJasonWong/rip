@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Funeral Agency 身後事務所</title>
+    <link rel="icon" type="image/x-icon" href="assets/site/ripfavicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/customize.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="keywords" content="rip, media art, death" />
+    <meta name="description" content="leave your last words here. &#10;讓您預先紀錄最後的說話。" />
+    <meta name="author" content="YS Jason Wong" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="bg-1 font-1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand px-3 text-white fw-bolder fs-3" href="index.php">Funeral Agency 身後事務所</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <img id="navbutton" onmouseout="document.getElementById('navbutton').src = 'assets/site/nav-icon.png';"
+                    onmouseover="document.getElementById('navbutton').src = 'assets/site/nav-icon-hover.png';"
+                    src="assets/site/nav-icon.png" width="25pt" class="float-end">
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header bg-black text-white">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu 目錄</h5>
+                    <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img id="closebutton"
+                            onmouseout="document.getElementById('closebutton').src = 'assets/site/cross-icon.png';"
+                            onmouseover="document.getElementById('closebutton').src = 'assets/site/cross-icon-hover.png';"
+                            src="assets/site/cross-icon.png" width="20pt">
+                    </button>
+                </div>
+                <div class="offcanvas-body bg-black text-white">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="nav-ul">
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="termofuse.html">Term of Use 使用條款</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn bg-1 text-black" id="lanbtn" onclick="changelanguage(lan);">Eng</a>
+                        </li>
+                </div>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <script>
+        var lan = 'zh';
+        function changelanguage() {
+            if (lan == 'zh') {
+                document.getElementById('lanbtn').innerText = "中文";
+                document.getElementById('zhVersion').style.display = 'none';
+                document.getElementById('enVersion').style.display = 'block';
+                lan = 'en';
+            } else {
+                document.getElementById('lanbtn').innerText = "Eng";
+                document.getElementById('zhVersion').style.display = 'block';
+                document.getElementById('enVersion').style.display = 'none';
+                lan = 'zh';
+            }
+        }
+    </script>
+    <div class="container-fluid vh-100 py-5" id="zhVersion">
+        <div class="row pt-5 justify-content-center">
+            <h1 class="text-center">關於計劃</h1>
+        </div>
+        <div class="row justify-content-center pb-5 px-4">
+            <div class="col-md-7 col-sm-9 pb-5">
+                <h3>理念</h3>
+                <p>身後事務所是一個網絡平台, 供使用者在生前交代身後事的地方。若使用者不幸離世, 他生前在此留下的遺言將有辦法傳送到家人及朋友。目前, 使用者可以將部分個人資料存放於我們的資料庫中,
+                    亦可以在此留下一些句子, 讓家人可以遵照他們的意願處理身後事。未來, 身後事務所將會有更完善的服務, 包括定期詢問使用者是否仍然在生、以及為某人留下定制留言。</p>
+                <h3>如何使用</h3>
+                <ul>
+                    <li>開始留言之前, 請先註冊帳戶。帳戶的個人資料將會紀錄在資料庫中, 方便日後使用及更改。請放心, 用戶密碼經過加密, 我們並不能透過資料庫得知你所輸入的密碼。</li>
+                    <li>開設帳戶後, 你可以選擇一張照片作為自己的遺照。</li>
+                    <li>你亦可在此留下解鎖電話的密碼, 方便家人在你離世後解鎖電話。</li>
+                    <li>你可增設重要聯絡人, 日後平台功能完全運作時, 此重要聯絡人將有存取你的資料的權限, 請務必細心挑選信任的人。</li>
+                    <li>最後, 請告知你的親朋好友關於此網站, 並邀請他們加入成為用戶。</li>
+                </ul>
+                <h3>關於開發者: </h3>
+                <p><a class="btn p-2 me-2" href="https://www.jasonsart.info/" target="_blank"
+                        style="background-color: #0e0e17;color: #ff9301;">Jason Wong</a>是城市大學創意媒體學院的應屆畢業生。希望透過此計劃,
+                    讓人明白人生苦短, 及時行樂,
+                    以及讓人思考生命中最重要的價值。此計劃亦鼓勵用戶將心底說話講出口, 勿讓自己留遺憾。</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid vh-100 py-5" id="enVersion" style="display: none;">
+        <div class="row pt-5 justify-content-center">
+            <h1 class="text-center">About this project</h1>
+        </div>
+        <div class="row justify-content-center pb-5 px-4">
+            <div class="col-md-7 col-sm-9 pb-5">
+                <h3>Our Notion</h3>
+                <p>Funeral Agency is an online platform, for users to publish their last words. If the user has passed
+                    away, unfortunately, his/her last words will be sent to family and friends. For now, users are
+                    allowed to store some of their information as well as their last words in our database, so that
+                    their families can reach and refer to their wishes after their death. In the future, Funeral Agency
+                    will be completed with integrated services. E.g. Regularly ask whether users are still alive, and
+                    customise messages for independent recipients.</p>
+                <h3>How to use</h3>
+                <ul>
+                    <li>Before you start typing messages, please register an account. Your personal information will be
+                        stored in the database where you are allowed to edit again in the future. The password you typed
+                        is encrypted, we are not able to access what you have typed for the password.</li>
+                    <li>After you registered an account, you can select and upload an image for your posthumous photo.
+                    </li>
+                    <li>You can save your phone’s passcode, your family can restore your phone if you passed away.</li>
+                    <li>You are allowed to set a close contact person. When the platform is fully functioning, the
+                        contact you set is authorised to retrieve your data. Therefore, please choose your close contact
+                        carefully.</li>
+                    <li>Finally, please tell your family and friends about this website, and invite them to join as a
+                        member.</li>
+                </ul>
+                <h3>About the developer:</h3>
+                <p><a class="btn p-2 me-2" href="https://www.jasonsart.info/" target="_blank"
+                    style="background-color: #0e0e17;color: #ff9301;">Jason Wong</a>is an undergraduate at the
+                    School of Creative Media, City University of Hong Kong. He had the idea in mind. By creating this
+                    site, he wanted everyone to treasure every moment in their life, and consider again what values the
+                    most to them. We also encourage users to speak when they have a chance.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-black fixed-bottom py-3">
+        <div class="row justify-content-between">
+            <div class="co-4 align-self-center text-white text-center fw-normal">&#169; 2022 copyright <span
+                    class="text-1">Jason Wong</span> all right reserved.<br>版權所有 不得轉載</div>
+        </div>
+    </footer>
+</body>
+
+</html>
