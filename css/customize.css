@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500&display=swap');
+
+.bg-1 {
+    background-color: #ffd1ad;
+}
+
+.bg-2 {
+    background-color: #c29f82;
+}
+
+.text-1 {
+    color: #ffd1ad;
+}
+
+.text-2 {
+    color: #c29f82;
+}
+
+.font-1 {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.btn-cus {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffd1ad;
+    text-align: center;
+
+    vertical-align: middle;
+    cursor: pointer;
+
+    background-color: black;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+
+}
+
+.btn-cus:hover {
+    color: white;
+}
