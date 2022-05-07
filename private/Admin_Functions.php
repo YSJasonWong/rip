@@ -17,7 +17,6 @@ class admin
         return $dbConnect;
     }
 
-    //return string array of all user info 
     static function getAllUserInfo($dbConnect)
     {
         $sql = "SELECT * FROM user_info";
@@ -79,17 +78,15 @@ class admin
         }
     }
 
-    //return json 
     static function showAllUserData($dbConnect)
     {
-        echo "jason2jj";
-        //$sql = "SELECT * FROM `user_data`";
-        //$result = mysqli_query($dbConnect, $sql);
-        //$array = mysqli_fetch_assoc($result);
+        $sql = "SELECT * FROM `user_data`";
+        $result = mysqli_query($dbConnect, $sql);
+        $array = mysqli_fetch_assoc($result);
 
-        //$encoded = json_encode($array);
-        // $jsonbb = json_decode($json); 
-        //echo var_dump($result);
+        $encoded = json_encode($array);
+        $jsonbb = json_decode($json); 
+        echo var_dump($result);
     }
 
     static function showOneUserData($dbConnect, $uname)
